@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+.iphone {
+    position: relative;
+    width: 334px;
+    height: 686px;
+    /*background-image: url('./iphone.jpg');*/
+    background-size: 378px 720px;
+    background-position-x: -26px;
+    /*(-26)*/
+    background-position-y: -22px;
+    background-repeat: no-repeat;
+    border: 3px solid silver;
+    border-radius: 50px;
+    background: black;
+}
+
+.screen {
+    position: absolute;
+    width: 292px;
+    height: 518px;
+    left: 29px;
+    top: 92px;
+    border: 1px solid gray;
+    background-image: linear-gradient( 45deg, lightgray, white);
+}
+
+.screen p {
+    /*position: absolute;*/
+    text-align: center;
+    top: 40%;
+    font-size: 3em;
+    font-family: fantasy;
+}
+
+.camera {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    left: 118px;
+    top: 48px;
+    border: 1px solid dimgray;
+    background: radial-gradient(circle, #1b3267, black);
+}
+
+.speaker {
+    position: absolute;
+    width: 55px;
+    height: 6px;
+    border-radius: 4px;
+    left: 150px;
+    top: 48px;
+    background: #4b4b4b;
+}
+
+.home {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 151px;
+    top: 627px;
+    border: 1px solid dimgray;
+    background: linear-gradient(to bottom right, dimgray, black);
+    /*background: white;*/
+}
+
+.signal-TL {
+    position: absolute;
+    width: 3px;
+    height: 11px;
+    left: 8px;
+    top: 61px;
+    background: darkgray;
+}
+
+.signal-TR {
+    position: absolute;
+    width: 3px;
+    height: 11px;
+    left: 339px;
+    top: 61px;
+    background: darkgray;
+}
+
+.signal-DL {
+    position: absolute;
+    width: 3px;
+    height: 11px;
+    left: 8px;
+    top: 633px;
+    background: darkgray;
+}
+
+.signal-DR {
+    position: absolute;
+    width: 3px;
+    height: 11px;
+    left: 339px;
+    top: 633px;
+    background: darkgray;
+}
+
+.button1 {
+    position: absolute;
+    width: 3px;
+    height: 27px;
+    border-radius: 3px 0 0 3px;
+    left: 5px;
+    top: 95px;
+    background: radial-gradient(circle, darkgray, gray)
+    /*border: 1px solid red;*/
+}
+
+.button2 {
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    border-radius: 3px 0 0 3px;
+    left: 5px;
+    top: 154px;
+    background: radial-gradient(circle, darkgray, gray)
+    /*border: 1px solid red;*/
+}
+
+.button3 {
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    border-radius: 3px 0 0 3px;
+    left: 5px;
+    top: 217px;
+    background: radial-gradient(circle, darkgray, gray)
+    /*border: 1px solid red;*/
+}
+
+.buttonR4 {
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    border-radius: 0 3px 3px 0;
+    left: 342px;
+    top: 154px;
+    background: radial-gradient(circle, darkgray, gray)
+    /*border: 1px solid red;*/
+}
