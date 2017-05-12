@@ -29,7 +29,8 @@
 
 .screen p {
     /*position: absolute;*/
-    text-align: center;
+    width: 121px;
+    margin: auto;
     top: 40%;
     font-size: 3em;
     font-family: fantasy;
