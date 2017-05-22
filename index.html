@@ -1,30 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Hello!This is LEEMEE's MONSTERs!</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet"> 
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/lightbox.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link id="css-preset" href="preset-color.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <!--  <link href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Baloo+Da|Barrio|Acme" rel="stylesheet"><!--字型-->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="favicon.ico" />
-  <title>Hello! This Is LEEMEE!</title>
-</head>
+        <!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
 
-<body>
-  <h1>Hello! This Is LEEMEE!</h1>
-  <img src="images/LEpic_1.jpg" alt="photo" height="150">
-  <img src="images/LEpic_5.jpg" alt="photo" height="150">
-  <p> │ <a href="Food/0425_food.html">作業A.食記</a> │ <a href="WebPlanning/0427_web.html">作業B.網站規劃</a> │ <a href="iPhone/iphone.html">作業C.iPhone繪圖</a>    │ </p>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.ico" />
+    </head><!--/head-->
 
-  <h3>PROFILE</h3>
-  <p></p>
-  <p>2013/12│labsunion</p>
-  <p>2012/12│大怪小怪拉線條</p>
-  <p>2012/11│荷蘭小鬆餅牆壁</p>
-  <p>2012/09│手繪安全帽小展</p>
-  <p>2011/10│100Monsters小怪展</p>
-  <p>2011/09│小怪房牆壁</p>
-  <p>2011/06│畫牆壁FIRST</p>
+    <body>
 
-</body>
+        <!--.preloader重新載入的小圓跑跑-->
+        <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+        <!--/.preloader-->
+        <!--Header-Home-START-->
+        <header id="home">
+            <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active" style="background-image: url(images/slider/GH-01.jpg)">
+                        <div class="caption">
+                            <h1 class="animated fadeInLeftBig">LEEMEE's<span>MONSTERs</span></h1>
+                            <p class="animated fadeInRightBig">ILLUSTRATION / WALL PAINTING / HELMET / EXHIBITION</p>
+                            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#helmet"><i class="fa fa-eye"></i>&ensp; HELMET &ensp;<i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(images/slider/SZG-01.jpg)">
+                        <div class="caption">
+                            <h1 class="animated fadeInLeftBig">LEEMEE's<span> MONSTERs</span></h1>
+                            <p class="animated fadeInRightBig">ILLUSTRATION / WALL PAINTING / HELMET / EXHIBITION</p>
+                            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#wall"><i class="fa fa-eye"></i> &ensp; WALL PAINTING &ensp;<i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(images/slider/EXBI-01.jpg)">
+                        <div class="caption">
+                            <h1 class="animated fadeInLeftBig">LEEMEE's<span>MONSTERs</span></h1>
+                            <p class="animated fadeInRightBig">ILLUSTRATION / WALL PAINTING / HELMET / EXHIBITION</p>
+                            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#exhi"> <i class="fa fa-eye"></i>&ensp; EXHIBITION &ensp; <i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                <!--左右切小箭頭 / 下面是往下的箭頭-->
+                <!--      <a id="tohash" href="#illu"><i class="fa fa-angle-down"></i></a>-->
+                <ol class="carousel-indicators">
+                    <li data-target="#home-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#home-slider" data-slide-to="1"></li>
+                    <li data-target="#home-slider" data-slide-to="2"></li>
+                </ol>
 
+            </div><!--/#home-slider-->
+            <!--/#main-nav-START-->
+            <div class="main-nav">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>  <!--預覽跑的小圓圖-->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <h1><img class="img-responsive" src="images/LEEMEEsMONSTERs_logo2.png" alt="logo"></h1>
+                        </a>                    
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">                 
+                            <li class="scroll active"><a href="#home">Home</a></li>
+                            <li class="scroll"><a href="#illu">ILLUSTRATION</a></li>
+                            <li class="scroll"><a href="#helmet">HELMET</a></li>
+                            <li class="scroll"><a href="#wall">WALL PAINTING</a></li>
+                            <li class="scroll"><a href="#exhi">EXHIBITION</a></li>
+                            <li class="scroll"><a href="#aboutme">ABOUT ME</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--/#main-nav--END-->
+        </header><!--Header-Home-END-->
+        <section1 id="illu">
+            <div class="container">
+                <div>
+                    <div class="row">
+                        <div class="text-center col-sm-8 col-sm-offset-2">
+                            <h2>ILLUSTRATION</h2>
+                            <h3>我可以為你畫一整個宇宙</h3>
+                            <p>這個世界太實際 而我的虛幻泡泡 僅存在離地0.3公分的地方 一碰就碎裂</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="container-illu"><!--((1))-->
+                    <div class="row">
+                        <div class="illu-item col-xs-6 col-sm-3 col-md-3">
+                            <div class="color-wrap">
+                                <img class="img-responsive" src="images/illu/sq-06.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="color-wrap-inner">
+                                        <h3>狀況劇</h3>
+                                        <p>知道滿地找牙是什麼情況了吧 再說啊！</p>
+                                        <!--                                        <a class="preview" href="images/illu/sq-06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.illu-item(1)-->
+                        <div class="illu-item col-xs-6 col-sm-3 col-md-3">
+                            <div class="color-wrap">
+                                <img class="img-responsive" src="images/illu/sq-05.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="color-wrap-inner">
+                                        <h3>血淋淋。深海的鮪魚</h3>
+                                        <p>妳以那優雅的姿態 一塊塊 一塊塊 將我的肉卸下 這 樣 對 嗎 !</p>
+                                        <!--                                        <a class="preview" href="images/illu/sq-05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.illu-item(2)-->
+                        <div class="illu-item col-xs-6 col-sm-3 col-md-3">
+                            <div class="color-wrap">
+                                <img class="img-responsive" src="images/illu/sq-09.png" alt="">
+                                <div class="overlay">
+                                    <div class="color-wrap-inner">
+                                        <h3>埋藏的寶藏</h3>
+                                        <p>在這裡 我埋藏了寶藏 有找到嗎?<br>仔細一點 再看久一點 會找到的。
+                                        </p>
+                                        <!--                                        <a class="preview" href="images/illu/sq-09.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.illu-item(3)-->
+                        <div class="illu-item col-xs-6 col-sm-3 col-md-3">
+                            <div class="color-wrap">
+                                <img class="img-responsive" src="images/illu/sq-10.png" alt="">
+                                <div class="overlay">
+                                    <div class="color-wrap-inner">
+                                        <h3>宇宙艦隊</h3>
+                                        <p>要不要加入艦隊? 可以當作是種邀請<br> 然後 你就逼逼了 因為 我們是宇宙逼逼...</p>
+                                        <!--                                        <a class="preview" href="images/illu/sq-10.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.illu-item(4)-->
+                    </div>
+                </div> <!--((1))-->
+                <div class="container text-center">
+                    <a data-scroll class="btn btn-ill animated fadeInUpBig" href="illustration.html"><i class="fa fa-eye"></i> &ensp; See More ILLUSTRATION &ensp; <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section1><!--/illu-->
+        <section2 id="helmet">
+            <div class="container tittle-padd">
+                <div class="container-fluid bg-helmet text-center">
+                    <h2> HELMET </h2>
+                    <h3>GO GO HELMET!手繪安全帽</h3>
+                    <p>車子太多 帽子太像 而我只想創造 每頂帽子都是一個故事</p><br>
+                    <div id="row1">
+                        <div class="col-xs-6 col-sm-3 col-md-3 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="thumbnail"> <img src="images/HELMET/HELMET-H1.jpg" alt="" class="img-circle helmet-img">
+                                <h3>AAA</h3><p>$1680</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-3 wow fadeInUp" data-wow-delay="400ms">
+                            <div class="thumbnail"> <img src="images/HELMET/HELMET-H2.jpg" alt="" class="img-circle helmet-img">
+                                <h3>BBB</h3><p>$1680</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-3 wow fadeInUp" data-wow-delay="600ms">
+                            <div class="thumbnail"> <img src="images/HELMET/HELMET-H3.jpg" alt="" class="img-circle helmet-img">
+                                <h3>CCC</h3><p>$1680</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-3 wow fadeInUp" wow data-wow-delay="800ms">
+                            <div class="thumbnail"> <img src="images/HELMET/HELMET-H4.jpg" alt="" class="img-circle helmet-img">
+                                <h3>DDD</h3><p>$3360</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="row2">
+                        <div class="col-xs-6 col-sm-3 col-md-3 wow fadeInUp" data-wow-delay="400ms">
+                            <div class="thumbnail"> <img src="images/HELMET/HELMET-A2.jpg" alt="" class="img-circle helmet-img">
+                                <h3>AAA</h3><p>$1680</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-3 wow fadeInUp" data-wow-delay="600ms">
+                            <div class="thumbnail"> <img src="images/HELMET/HELMET-D4.jpg" alt="" class="img-circle helmet-img">
+                                <h3>BBB</h3><p>$1680</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-3 wow fadeInUp" data-wow-delay="800ms">
+                            <div class="thumbnail"> <img src="images/HELMET/HELMET-F2.jpg" alt="" class="img-circle helmet-img">
+                                <h3>CCC</h3><p>$1680</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-3 wow fadeInUp" wow data-wow-delay="1000ms">
+                            <div class="thumbnail"> <img src="images/HELMET/HELMET-G4.jpg" alt="" class="img-circle helmet-img">
+                                <h3>DDD</h3><p>$3360</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <a data-scroll class="btn btn-ill animated fadeInUpBig" href="helmet.html"><i class="fa fa-eye"></i> &ensp; See More HELMET &ensp; <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </section2><!--/helmet-->
+
+        <section3 id="wall"> 
+            <div class="container tittle-padd">
+                <div class="container-fluid bg-helmet text-center">
+                    <h2> WALL PAINTING </h2>
+                    <h3>SZG彩繪牆壁</h3>
+                    <p>從一面牆開始 築整片樂園</p><br>
+                    <div id="row1">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="thumbnail"> <img src="images/WALL/WALL_SZG-00.jpg" alt="">
+                                <h3>SZG the first one wall.</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi facilis amet ad adipisci, qui non repudiandae. Corporis nemo debitis eius impedit, praesentium facere eveniet cupiditate fugiat, odio ipsam animi illo, inventore laboriosam. Vitae molestiae sapiente deserunt provident aut hic dolor in quos iusto asperiores cum commodi earum iste cupiditate, quae.</p><div class="container text-center">
+                                <a data-scroll class="btn btn-ill animated fadeInUpBig" href="wall_1.html"><i class="fa fa-eye"></i> &ensp; See More this WALL... &ensp; <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="thumbnail"> <img src="images/WALL/WALL_LMR-00.jpg" alt="">
+                                <h3>LMR彩繪牆壁</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi facilis amet ad adipisci, qui non repudiandae. Corporis nemo debitis eius impedit, praesentium facere eveniet cupiditate fugiat, odio ipsam animi illo, inventore laboriosam. Vitae molestiae sapiente deserunt provident aut hic dolor in quos iusto asperiores cum commodi earum iste cupiditate, quae.</p>
+                                <div class="container text-center">
+                                    <a data-scroll class="btn btn-ill animated fadeInUpBig" href="wall_2.html"><i class="fa fa-eye"></i> &ensp; See More this WALL... &ensp; <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="thumbnail"> <img src="images/WALL/WALL_SSB-00.jpg" alt="">
+                                <h3>SSB彩繪牆壁</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi facilis amet ad adipisci, qui non repudiandae. Corporis nemo debitis eius impedit, praesentium facere eveniet cupiditate fugiat, odio ipsam animi illo, inventore laboriosam. Vitae molestiae sapiente deserunt provident aut hic dolor in quos iusto asperiores cum commodi earum iste cupiditate, quae.</p>
+                                <div class="container text-center">
+                                    <a data-scroll class="btn btn-ill animated fadeInUpBig" href="wall_3.html"><i class="fa fa-eye"></i> &ensp; See More this WALL... &ensp; <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section3><!--/wall-->
+        <section4 id="exhi">
+            <div class="container tittle-padd">
+                <div class="container-fluid bg-helmet text-center">
+                    <h2>EXHIBITION</h2>
+                    <h3>MONSTERs展覽</h3>
+                    <p>100 Monsters小怪 / Go Go Helmet! /  大怪小怪拉線條 </p><br>
+                    <div id="row1">
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="thumbnail"> <img src="images/EXBI/EXBI_100M-00.jpg" alt="">
+                                <h3>100 Monsters小怪</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis animi ipsum dicta officiis nulla magni iusto ducimus, doloribus explicabo reprehenderit saepe accusantium harum deleniti a nesciunt magnam hic, numquam necessitatibus!</p>
+                                <a data-scroll class="btn btn-ill animated fadeInUpBig" href="exbi_1.html"><i class="fa fa-eye"></i> &ensp; See More...&ensp; <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="thumbnail"> <img src="images/EXBI/EXBI_HSH-00.jpg" alt="">
+                                <h3>Go Go Helmet!</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis animi ipsum dicta officiis nulla magni iusto ducimus, doloribus explicabo reprehenderit saepe accusantium harum deleniti a nesciunt magnam hic, numquam necessitatibus!</p>
+                                <a data-scroll class="btn btn-ill animated fadeInUpBig" href="exbi_2.html"><i class="fa fa-eye"></i> &ensp; See More...&ensp; <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="thumbnail"> <img src="images/EXBI/EXBI_DSL-00.jpg" alt="">
+                                <h3>大怪小怪拉線條</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis minus ratione optio inventore reiciendis sed dolorem unde vero doloribus deleniti molestiae voluptatum dolores iusto tenetur fugiat magni quisquam, modi soluta.</p>
+                                <a data-scroll class="btn btn-ill animated fadeInUpBig" href="exbi_3.html"><i class="fa fa-eye"></i> &ensp; See More...&ensp; <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section4><!--/exhi-->
+
+        <section5 id="aboutme">
+            <!--    <div id="google-map" class="wow fadeIn" data-latitude="52.365629" data-longitude="4.871331" data-wow-duration="1000ms" data-wow-delay="400ms"></div>-->
+            <div id="about-me" class="parallax">
+                <div class="container tittle-padd">
+                    <div class="row">
+                        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <h2>ABOUT ME</h2>
+                            <img src="images/LEEMEEme2.png" class="img-responsive img-circle margin" style="display:inline" alt="" width="200" height="200"><br>
+                            <br>
+                            <p>LEEMEE│那些美好僅存在我心中 我可以為你畫一整個宇宙!</p>
+                            <p>我好像想要把某部分的自己弄模糊 然後挖掉!<br>可是看著越來越透明的自己 卻開始害怕自己就這樣消失了!<br>到底是什麼把我變成這樣?!<br>沒有誰限制我 可我卻把自己卡在這......<br>_____________________ 透 明 的 我 。</p>
+                            <p>心跑得太前面 腦子在後面猛甩不要不要 <br>而我只是個 胡 言 亂 語 的人<br>戒不掉 又為什麼要？
+                            </p>
+
+                            <p> 寫信告訴我 今夜你想要夢什麼 <i class="fa fa-2x fa-envelope" aria-hidden="true"></i> <a href="mailto:leemeetsai@gmail.com">leemeetsai@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section5><!--/#aboutme-->
+        <footer id="footer">
+            <div class="row">
+                <div class="container text-center">
+                    <p>leemeetsai.github.io</p>
+
+
+                    <!--
+<a href="https://leemeetsai.github.io/"><i class="fa fa-2x fa-home" aria-hidden="true"></i></a>
+<a href="mailto:leemeetsai@gmail.com"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+-->
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <!--  <script type="text/javascript" src="js/mousescroll.js"></script>-->
+        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <script type="text/javascript" src="js/jquery.countTo.js"></script>
+        <script type="text/javascript" src="js/lightbox.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
 </html>

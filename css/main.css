@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Baloo', cursive;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Barrio', cursive;
+    font-family: 'Baloo Da', cursive;
+    font-family: 'cwTeXYen', sans-serif; /*(Chinese: 圓體)*/
+    font-family: 'Baloo', 'LiHei Pro', Microsoft JhengHei, '新細明體', sans-serif;
+}
+/*(Helvetica)*/
+
+
+body {
+/*  font-family: 'LiHei Pro', Microsoft JhengHei, sans-serif;*/
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  background-color: #fff;
+}
+
+p{
+    font-family:  'LiHei Pro', Microsoft JhengHei, '新細明體', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: 'Baloo Da','LiHei Pro', Microsoft JhengHei, sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+
+.btn {
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar-nav li a:hover, 
+.navbar-nav li a:focus {
+ font-size: 20px;  /* (滑鼠滑過去字放大)*/
+  outline:none;
+  outline-offset: 0;
+  text-decoration:none;  
+  color: #333;
+  background: transparent; /*(transparent)*/
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+a:focus, 
+a:hover {
+  text-decoration: none;
+  outline: none
+}
+
+section {
+  padding: 90px 0;
+}
+
+.heading {
+  padding-bottom:90px;
+}
+
+/*preloader重新載入的小圓跑跑*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background: #fff;
+}
+
+.preloader > i {
+  position: absolute;
+  font-size: 36px;
+  line-height: 36px;
+  top: 50%;
+  left: 50%;
+  height: 36px;
+  width: 36px;
+  margin-top: -15px;
+  margin-left: -15px;
+  display: inline-block;
+}
+
+#home-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+#home-slider .caption {
+  position: absolute;
+  top: 50%;
+  margin-top: -104px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 15;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+#home-slider .caption h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.caption .btn-start {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding:14px 40px;
+  border: 1px solid #6e6d6c;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.caption .btn-start:hover {
+  color: #fff
+}
+
+.btn-ill {
+  color: orangered;
+  font-size: 14px;
+  font-weight: 90%;
+  padding:14px 40px;
+  border: 1px solid orangered;
+  border-radius: 4px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2000px;
+}
+.sba.item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500 !important;
+}
+
+.carousel-fade .carousel-inner .item:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.7);
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.left-control, .right-control {
+  position: absolute;
+  top: 50%;
+  height: 51px;
+  width: 51px;
+  line-height: 48px;
+  border-radius: 50%;
+  border:1px solid #fff;  
+  z-index: 20;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.left-control {
+  left: -51px
+} 
+
+.right-control {
+  right: -51px;
+}
+
+.left-control:hover, 
+.right-control:hover {
+  color: #fff;
+}
+
+#home-slider:hover .left-control {
+  left:30px
+} 
+
+#home-slider:hover .right-control {
+  right:30px
+}
+/*angle-down是往下的小箭頭*/
+/*
+#home-slider .fa-angle-down {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  color: #fff;
+  display: inline-block;
+  width: 24px;
+  margin-left: -12px;
+  font-size: 24px;
+  line-height: 24px;
+  z-index: 999;
+  -webkit-animation: bounce 3000ms infinite;
+  animation: bounce 3000ms infinite;
+}
+*/
+
+.navbar-right li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar-right li.active a {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.navbar-brand h1 {
+    margin: auto;
+/*  margin-top: 5px;*/
+}
+
+/*(our-services)整段只是暫時 移除之後可移除*/
+.service-icon {
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  height: 90px;
+  line-height: 90px;
+  width: 90px;  
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.our-services .col-sm-4:hover .service-icon {
+  background-color: #333;
+}
+
+.our-services .col-sm-4 {
+  border-right:1px solid #f2f2f2;
+  border-bottom:1px solid #f2f2f2;
+  padding-bottom: 50px;
+}
+
+.our-services .col-sm-4:nth-child(4), 
+.our-services .col-sm-4:nth-child(5), 
+.our-services .col-sm-4:nth-child(6) {
+  border-bottom:0;
+  padding-top: 60px;
+}
+
+.our-services .col-sm-4:nth-child(3), 
+.our-services .col-sm-4:nth-child(6) {
+  border-right:0;
+}
+
+.service-info h3 {
+  margin-top: 35px;
+}
+
+
+
+#contact {
+  padding-top: 45px;
+  padding-bottom: 0;
+}
+
+.btn-ill a {
+  color: #fff
+  background-color: orangered;
+}
+
+#about-me {
+  background-image:url(../images/bg-aboutme3.jpg);
+  padding-bottom: 50px ; 
+    color: whitesmoke;
+/*    opacity: 1; (透明度)*/
+
+}
+
+#about-me h2 {
+  color: whitesmoke;
+}
+
+.tittle-padd{
+  padding-top: 95px;
+}
+
+/*
+.center{
+    margin: 0px auto;
+}
+*/
+
+#helmet .thumbnail {
+	background: transparent;
+	border: 0;
+}
+#helmet .thumbnail .caption {
+	padding: 4px;
+	color: orangered;
+}
+#helmet .item {
+	padding: 0;
+	margin: 10px;
+	text-align: center;
+}
+img.img-circle.helmet-img {
+	width: 120px;
+	height: 120px;
+/*	border: 2px solid black;*/
+	transition: all 0.5s;
+}
+#helmet .caption{
+    padding: 0;
+	margin: 0px;
+}
+
+#footer {
+  text-align: center;
+  color:#fff;
+  padding:14px;
+}
+#footer p{
+    font-family:  Verdana, Helvetica, Sans-Serif !important;
+}
+#footer a {
+  color: beige;
+}
+#footer li {
+    display:inline;
+}
+
+
+
