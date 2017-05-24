@@ -37,10 +37,58 @@ h3 {
 }
 
 
+/*
 .btn {
   border: 0;
   border-radius: 0;
 }
+*/
+
+.btn-ill {
+  color: orangered;
+  font-size: 14px;
+  font-weight: 90%;
+  padding:14px 40px;
+  border: 1px solid orangered;
+  border-radius: 4px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.btn-ill a {
+  color: #fff
+  background-color: orangered;
+}
+
+.self-btn {
+/*
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: orangered;
+*/
+    text-align: center;
+    max-width: 90%;
+    padding:14px 40px;
+}
+
+.self-btn a {
+/*    background-color:white ;*/
+    border: 1px solid orangered;
+    border-radius: 4px;
+    color: #333;
+    max-width: 100%;
+    padding:14px 40px;
+
+}
+.self-btn a:hover {
+/*    background-color:orange ;*/
+    border: 1px solid orangered;
+    border-radius: 4px;
+    color: #333;
+    padding:14px 40px;
+}
+
 
 .navbar-nav li a:hover, 
 .navbar-nav li a:focus {
@@ -138,16 +186,6 @@ section {
   color: #fff
 }
 
-.btn-ill {
-  color: orangered;
-  font-size: 14px;
-  font-weight: 90%;
-  padding:14px 40px;
-  border: 1px solid orangered;
-  border-radius: 4px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
 
 
 .carousel-fade .carousel-inner .item {
@@ -315,10 +353,7 @@ section {
   padding-bottom: 0;
 }
 
-.btn-ill a {
-  color: #fff
-  background-color: orangered;
-}
+
 
 #about-me {
   background-image:url(../images/bg-aboutme3.jpg);
